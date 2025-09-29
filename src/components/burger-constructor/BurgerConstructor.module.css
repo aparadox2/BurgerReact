@@ -1,0 +1,130 @@
+.section {
+  padding: clamp(16px, 1rem, 24px);
+  background-color: #131316;
+  color: white;
+  width: 50%;
+  flex: 1;
+  height: 100vh; 
+}
+
+.beforeConstructorList {
+    height: clamp(100px, 156.25rem, 100px);
+    width: 100%;
+}
+
+.constructorList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: clamp(8px, 0.5rem, 16px);
+  max-height: clamp(320px, 25rem, 480px);
+  overflow-y: scroll;
+  /* padding-right: clamp(8px, 0.5rem, 16px); */
+  scrollbar-width: thin;
+  scrollbar-color: #9a7aff #1e1e2e;
+}
+
+.constructorList::-webkit-scrollbar {
+  width: clamp(6px, 0.375rem, 10px);
+  -webkit-appearance: none;
+}
+
+.constructorList::-webkit-scrollbar-track {
+  background: #131316;
+  border-radius: clamp(8px, 0.5rem, 12px);
+  -webkit-appearance: none;
+}
+
+.constructorList::-webkit-scrollbar-thumb {
+  background-color: #9a7aff;
+  border-radius: clamp(8px, 0.5rem, 12px);
+  -webkit-appearance: none;
+}
+
+.constructorList::-webkit-scrollbar-thumb:hover {
+  background-color: #b399ff;
+}
+
+.constructorList::-webkit-scrollbar-button {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  background: transparent !important;
+}
+
+.constructorList::-webkit-scrollbar-corner {
+  background: transparent;
+}
+.item,
+.draggableItem {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 0.5rem, 12px);
+  width: 100%;
+}
+
+.btnItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  padding: clamp(8px, 0.5rem, 16px);
+  height: clamp(48px, 3rem, 80px);
+  background: #2d2d3d;
+  border-radius: clamp(24px, 1.5rem, 40px);
+  gap: clamp(8px, 0.5rem, 12px);
+}
+
+
+
+.itemImage,
+.btnImage {
+  width: clamp(32px, 2rem, 48px);
+  height: clamp(32px, 2rem, 48px);
+  object-fit: contain;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: clamp(4px, 0.25rem, 8px);
+  font-size: clamp(20px, 1.25rem, 28px);
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.deleteIcon,
+.lockIcon {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.deleteIcon:hover,
+.lockIcon:hover {
+  opacity: 1;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(8px, 0.5rem, 16px);
+  background: transparent;
+  border-radius: clamp(6px, 0.375rem, 10px);
+}
+
+.totalPrice {
+  display: flex;
+  align-items: center;
+  gap: clamp(4px, 0.25rem, 8px);
+  font-size: clamp(20px, 1.25rem, 28px);
+  font-weight: bold;
+  margin-left: auto;
+  padding: 10px;
+}
+
+.totalPrice svg {
+  width: clamp(16px, 1rem, 24px);
+  height: clamp(16px, 1rem, 24px);
+}
