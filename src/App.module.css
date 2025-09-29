@@ -1,0 +1,25 @@
+.app {
+  min-height: 100vh;
+  background-color: #131316;
+  color: white;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: clamp(16px, 1rem, 32px);
+  padding: clamp(16px, 1rem, 24px);
+  max-width: 50%;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    gap: clamp(16px, 1rem, 24px);
+    height: auto;
+  }
+}
